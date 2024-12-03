@@ -276,10 +276,36 @@ const UserProfileSettings = ({ visibleSections, setVisibleSections }) => {
               id="raise"
               className="w-full p-2 mt-1 border rounded-md"
             />
-            <div className="mt-2 flex items-center" onClick={() => toggleVisibility('raise')}>
+              <div className="mt-2 flex items-center" onClick={() => toggleVisibility('raise')}>
               {visibleSections.raise ? <EyeOutlined /> : <EyeInvisibleOutlined />}
               <span className="ml-2 text-sm text-gray-500 hover:text-black">Show on</span>
+              </div>
+            
+
+              <div className="my-4">
+            <label htmlFor="evaluation" className="block text-sm font-semibold">Twitter</label>
+            <input
+              type="text"
+              id="twitter"
+              className="w-full p-2 mt-1 border rounded-md"
+            />
+            <div className="mt-2 flex items-center" onClick={() => toggleVisibility('evaluation')}>
+              {visibleSections.evaluation ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+              <span className="ml-2 text-sm text-gray-500 hover:text-black">Show on</span>
             </div>
+            <div className="my-4">
+            <label htmlFor="financial" className="block text-sm font-semibold">Facebook</label>
+            <input
+              type="number"
+              id="financial"
+              className="w-full p-2 mt-1 border rounded-md"
+            />
+            <div className="mt-2 flex items-center" onClick={() => toggleVisibility('financial')}>
+              {visibleSections.financial ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+              <span className="ml-2 text-sm text-gray-500 hover:text-black">Show on</span>
+            </div>
+          </div>
+          </div>
           </div>
         </div>
       </div>
