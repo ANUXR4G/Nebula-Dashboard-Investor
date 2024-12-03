@@ -84,7 +84,7 @@ const UserProfile = () => {
                 </p>
                 <div className="mt-4 space-y-2">
                   <p><strong>Full Name:</strong> admin</p>
-                  <p><strong>Role:</strong> Developer</p>
+                  <p><strong>Role:</strong> Investor</p>
                   <p><strong>Country:</strong> India</p>
                   <p><strong>Phone:</strong> +(123)456-7890</p>
                   {visibleSections.pitchDate && <p><strong>Pitch Date:</strong> 2024-11-15</p>}
